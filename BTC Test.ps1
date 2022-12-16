@@ -41,9 +41,6 @@ $results = $data | ForEach-Object {
 
 $results = $results | Select-Object ComputerName, RemotePort, TcpTestSucceeded | Sort-Object RemotePort, ComputerName
 
-$results | Export-Csv -Path "C:\BTCTest.csv"
-
-
 $results | Format-Table
 
-#Read-Host -Prompt "Press ENTER to continue"
+Read-Host -Prompt "Press ENTER to continue"
